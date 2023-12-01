@@ -91,6 +91,9 @@
     animation-delay: 3s;
     
   }
+  .imagen-principal img{
+    opacity: 0;
+  }
 
   .titulo-principal-container {
     text-align: center;
@@ -109,6 +112,7 @@
     color: black;
     margin: 0;
     line-height: 55px;
+    opacity: 0;
   }
 
 .icono-desplazamiento-container{
