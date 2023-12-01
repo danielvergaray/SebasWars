@@ -1,0 +1,124 @@
+@media (max-width: 576px) {
+  @font-face {
+    font-family: "StarJediHollow-A4lL";
+    src: url(./fuentes/Starjedi.ttf) format("truetype");
+    font-weight: normal; /* o el peso que estés utilizando */
+    font-style: normal; /* o el estilo que estés utilizando */
+  }
+
+  main {
+    background-image: url(./imagenes/fondo.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+  }
+
+  .primera-pantalla {
+    display: grid;
+    grid-template-rows: 30% 36% 33%;
+    height: 100vh;
+  }
+  .textos-introduccion {
+    text-align: center;
+    padding-top: 20%;
+  }
+  .textos-introduccion p {
+    margin: 0;
+    font-family: "StarJediHollow-A4lL";
+    animation-fill-mode: forwards;
+    font-size: 1.3rem;
+    color: white;
+    margin: 0;
+    line-height: 25px;
+    opacity: 0;
+  }
+  .textos-introduccion p:nth-child(1){
+    animation: fadeInUp 1s forwards;
+  }
+  .textos-introduccion :nth-child(2){
+    text-shadow: -1px -1px 0 white, /* Sombra superior izquierda (color del borde) */
+    1px -1px 0 white, /* Sombra superior derecha (color del borde) */
+   -1px  1px 0 white, /* Sombra inferior izquierda (color del borde) */
+    1px  1px 0 white; /* Sombra inferior derecha (color del borde) */
+    color: black;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 1s;
+  }
+  .textos-introduccion p:nth-child(3){
+    animation: fadeInUp 1s forwards;
+    animation-delay: 2s;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .imagen-principal {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 30vh;
+    animation: fadeIn 1s forwards;
+    animation-delay: 3s;
+    
+  }
+
+  .titulo-principal-container {
+    text-align: center;
+    animation: zoomIn 1s forwards;
+    animation-delay: 4s;
+    /* opacity: 0; */
+    
+  }
+  .titulo-principal-container p {
+    font-family: "StarJediHollow-A4lL";
+    text-shadow: -1px -1px 0 yellow, /* Sombra superior izquierda (color del borde) */
+    1px -1px 0 yellow, /* Sombra superior derecha (color del borde) */
+   -1px  1px 0 yellow, /* Sombra inferior izquierda (color del borde) */
+    1px  1px 0 yellow; /* Sombra inferior derecha (color del borde) */
+    font-size: 4rem;
+    color: black;
+    margin: 0;
+    line-height: 55px;
+  }
+
+.icono-desplazamiento-container{
+    padding-top: 40px;
+}
+.icono-desplazamiento-container i{
+    color: #434343;
+    font-size: 3rem;
+}
+
+
+  
+}
