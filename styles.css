@@ -1,4 +1,9 @@
 @media (max-width: 576px) {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   @font-face {
     font-family: "StarJediHollow-A4lL";
     src: url(./fuentes/Starjedi.ttf) format("truetype");
@@ -11,7 +16,7 @@
     background-repeat: none;
     background-size: cover;
     background-position: center;
-
+    width: 100%;
     color: white;
   }
 
@@ -89,17 +94,16 @@
     height: 30vh;
     animation: fadeIn 1s forwards;
     animation-delay: 3s;
+    opacity: 0
     
   }
-  .imagen-principal img{
-    opacity: 0;
-  }
+  
 
   .titulo-principal-container {
     text-align: center;
     animation: zoomIn 1s forwards;
     animation-delay: 4s;
-    /* opacity: 0; */
+    opacity: 0;
     
   }
   .titulo-principal-container p {
@@ -112,7 +116,7 @@
     color: black;
     margin: 0;
     line-height: 55px;
-    opacity: 0;
+    /* opacity: 0; */
   }
 
 .icono-desplazamiento-container{
