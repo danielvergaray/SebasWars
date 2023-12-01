@@ -11,13 +11,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
   </head>
   <body>
     <main>
       <section class="primera-pantalla">
-        <div class="textos-introduccion ">
+        <div class="textos-introduccion">
           <p class="animate__animated animate__slideInUp">Pronto,</p>
           <p class="animate__animated animate__slideInUp">En un parque</p>
           <p class="animate__animated animate__slideInUp">Muy, muy lejano...</p>
@@ -25,16 +26,61 @@
         <div class="imagen-principal animate__animated animate__fadeIn">
           <img src="./imagenes/DARTHVADER.png" alt="" />
         </div>
-        <div class="titulo-principal-container animate__animated animate__zoomIn">
+        <div
+          class="titulo-principal-container animate__animated animate__zoomIn"
+        >
           <p>
             Sebas <br />
             wars
           </p>
           <div class="icono-desplazamiento-container">
-            <i class="fa-solid fa-circle-chevron-down"></i>
+            <i class="fa-solid fa-chevron-down"></i>
           </div>
         </div>
       </section>
+
+      <section class="picnic-container">
+        <div class="picnic-estrella" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+          <i class="fa-solid fa-asterisk" ></i>
+        </div>
+        <div class="textos-introduccion titulos-segunda-pagina" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+          <p class="animate__animated animate__slideInUp">Episodio ix</p>
+          <p class="animate__animated animate__slideInUp">Picnic de</p>
+          <p class="animate__animated animate__slideInUp">Cumpleaños</p>
+        </div>
+        <div class="picnic-texto picnic-texto-entrada" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+          <p>
+            Un joven jedi llamado Sebastián Skywalker está próximo a celebrar su
+            noveno cumpleaños.
+          </p>
+        </div>
+        <div class="picnic-imagen-container" data-aos="flip-left" data-aos-delay="500" data-aos-duration="2000">
+          <img src="./imagenes/sebasImg1.jpg" alt="" />
+        </div>
+        <div class="picnic-texto picnic-texto-medio" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+          <p>
+            Una nueva esperanza aparece para la Resistencia, quienes buscan
+            valientes Jedi dispuestos a luchar por una buena causa.
+          </p>
+        </div>
+        <div class="picnic-imagen-container" data-aos="flip-left" data-aos-delay="500" data-aos-duration="2000">
+          <img src="./imagenes/sebasImg2.jpg" alt="" />
+        </div>
+        <div class="picnic-texto picnic-texto-salida" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+          <p>
+            Únete y forma parte de nuestra alianza, en un picnic lleno de
+            alegría que promete derrotar a la Estrella del aburrimiento.
+            ¡Contamos contigo!
+          </p>
+        </div>
+      </section>
     </main>
+
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
