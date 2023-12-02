@@ -1,12 +1,10 @@
-
-
-
 @media (max-width: 576px) {
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+
   @font-face {
     font-family: "StarJediHollow-A4lL";
     src: url(./fuentes/Starjedi.ttf) format("truetype");
@@ -17,7 +15,6 @@
     font-family: "Syncopate";
     src: url(./fuentes/Syncopate-Bold.ttf) format("truetype");
     src: url(./fuentes/Syncopate-Regular.ttf) format("truetype");
-    
   }
 
   main {
@@ -48,19 +45,19 @@
     line-height: 25px;
     opacity: 0;
   }
-  .textos-introduccion p:nth-child(1){
+  .textos-introduccion p:nth-child(1) {
     animation: fadeInUp 1s forwards;
   }
-  .textos-introduccion :nth-child(2){
-    text-shadow: -1px -1px 0 white, /* Sombra superior izquierda (color del borde) */
-    1px -1px 0 white, /* Sombra superior derecha (color del borde) */
-   -1px  1px 0 white, /* Sombra inferior izquierda (color del borde) */
-    1px  1px 0 white; /* Sombra inferior derecha (color del borde) */
+  .textos-introduccion :nth-child(2) {
+    text-shadow: -1px -1px 0 white,
+      /* Sombra superior izquierda (color del borde) */ 1px -1px 0 white,
+      /* Sombra superior derecha (color del borde) */ -1px 1px 0 white,
+      /* Sombra inferior izquierda (color del borde) */ 1px 1px 0 white; /* Sombra inferior derecha (color del borde) */
     color: black;
     animation: fadeInUp 1s forwards;
     animation-delay: 1s;
   }
-  .textos-introduccion p:nth-child(3){
+  .textos-introduccion p:nth-child(3) {
     animation: fadeInUp 1s forwards;
     animation-delay: 2s;
   }
@@ -114,24 +111,21 @@
     height: 30vh;
     animation: fadeIn 1s forwards;
     animation-delay: 3s;
-    opacity: 0
-    
+    opacity: 0;
   }
-  
 
   .titulo-principal-container {
     text-align: center;
     animation: zoomIn 1s forwards;
     animation-delay: 4s;
     opacity: 0;
-    
   }
   .titulo-principal-container p {
     font-family: "StarJediHollow-A4lL";
-    text-shadow: -1px -1px 0 yellow, /* Sombra superior izquierda (color del borde) */
-    1px -1px 0 yellow, /* Sombra superior derecha (color del borde) */
-   -1px  1px 0 yellow, /* Sombra inferior izquierda (color del borde) */
-    1px  1px 0 yellow; /* Sombra inferior derecha (color del borde) */
+    text-shadow: -1px -1px 0 yellow,
+      /* Sombra superior izquierda (color del borde) */ 1px -1px 0 yellow,
+      /* Sombra superior derecha (color del borde) */ -1px 1px 0 yellow,
+      /* Sombra inferior izquierda (color del borde) */ 1px 1px 0 yellow; /* Sombra inferior derecha (color del borde) */
     font-size: 4rem;
     color: black;
     margin: 0;
@@ -139,35 +133,33 @@
     /* opacity: 0; */
   }
 
-.icono-desplazamiento-container{
+  .icono-desplazamiento-container {
     padding-top: 40px;
     -webkit-animation: pulse 1s infinite;
     animation: pulse 1s infinite;
-}
-.icono-desplazamiento-container i{
+  }
+  .icono-desplazamiento-container i {
     color: #434343;
     font-size: 3rem;
     color: white;
-}
-.titulos-segunda-pagina p:nth-child(1){
-  font-size: 1rem;
-}
-.titulos-segunda-pagina p:nth-child(2), .titulos-segunda-pagina p:nth-child(3){
-  text-shadow: -0.5px -0.5px 0 yellow, 
-  0.5px -0.5px 0 yellow,
-   -0.5px  0.5px 0 yellow, 
-   0.5px  0.5px 0 yellow; 
+  }
+  .titulos-segunda-pagina p:nth-child(1) {
+    font-size: 1.2rem;
+  }
+  .titulos-segunda-pagina p:nth-child(2),
+  .titulos-segunda-pagina p:nth-child(3) {
+    text-shadow: -0.5px -0.5px 0 yellow, 0.5px -0.5px 0 yellow,
+      -0.5px 0.5px 0 yellow, 0.5px 0.5px 0 yellow;
     color: black;
     font-size: 1.5rem;
-}
+  }
 
-.picnic-container{
-  width: 80%;
-  margin: auto;
-  padding-top: 100px;
-  
-}
-/* .picnic-estrella{
+  .picnic-container {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+  }
+  /* .picnic-estrella{
   text-align: center;
   padding-top: 100px;
   font-size: 2rem;
@@ -175,34 +167,145 @@
   
 } */
 
+  .picnic-texto {
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Syncopate";
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: auto;
+  }
+  .picnic-texto p {
+    width: 100%;
+    margin: auto;
+  }
+  .picnic-imagen-container {
+    text-align: center;
+  }
+  .picnic-imagen-container img {
+    width: 100%;
+    border-radius: 20px;
+    /* height: 150px; */
+  }
 
-.picnic-texto{
-  padding: 20px 0;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: 'Syncopate';
-  font-size: 0.8rem;
-  line-height: 1rem;
-  margin: auto;
-}
-.picnic-texto p{
-  width: 100%;
-  margin: auto;
-}
-.picnic-imagen-container{
-  text-align: center;
-}
-.picnic-imagen-container img{
-  width: 100%;
-  border-radius: 20px;
-  /* height: 150px; */
+  .fiesta-datos-container {
+    background-color: black;
+  }
 
-}
-  
+  .cards-container {
+    /* display: flex;
+    flex-direction: column; */
+    margin: 10px auto;
+    padding: 0;
+    height: 150px;
+    width: 80%;
+    background-color: transparent;
+    border: 1px solid yellow;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 85% 15%;
+  }
 
+  .card-info {
+    /* creada en el js */
+    /* display: grid;
+    grid-template-columns: 20% 60% 20%; */
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+  }
 
+  .card-info p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.25rem;
+    text-align: center;
+    color: white;
+    padding-left: 20px;
+  }
+  .card-info-volteada p{
+    font-size: 1rem;
+    color: yellow;
+    padding-left: 50px;
+    width: 100%;
+  }
+  .card-informacion-contenedor {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+  }
+  .card-info i {
+    margin: auto;
+    color: white;
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+  .card-flecha {
+    position: relative;
+    top: 110px;
+    padding-bottom: 20px;
+    grid-column: 2;
+    color: white;
+    height: min-content;
+    
+  }
+ 
 
+  .btn-verMapa-container {
+    text-align: center;
+    background-color: black;
+  }
+  .btn-verMapa-container button {
+    width: 80%;
+    margin: auto;
+    background-color: yellow;
+    border-radius: 10px;
+    text-align: left;
+    padding: 5px;
+    padding-left: 20px;
+    border: none;
+    margin-top: 10px;
+  }
+  .btn-verMapa-container button i {
+    text-align: right;
+    padding-left: 50%;
+    
+  }
+  .btn-verMapa-container button a{
+    text-decoration: none;
+    color: black;
+  }
+  .despedida-container {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding: 30px 0;
+    background-color: black;
+  }
+  .despedida-slogan i {
+    padding: 10px 0;
+    font-size: 2rem;
+  }
+  .despedida-slogan p {
+    width: 60%;
+    margin: auto;
+    padding: 20px 0;
+    font-family: "Syncopate";
+    font-weight: bolder;
+  }
+  .titulo-final {
+    font-family: "StarJediHollow-A4lL";
+    text-shadow: -1px -1px 0 yellow,
+      /* Sombra superior izquierda (color del borde) */ 1px -1px 0 yellow,
+      /* Sombra superior derecha (color del borde) */ -1px 1px 0 yellow,
+      /* Sombra inferior izquierda (color del borde) */ 1px 1px 0 yellow; /* Sombra inferior derecha (color del borde) */
+    font-size: 1rem;
+    color: black;
+  }
 
-
-
+  .oculto {
+    display: none;
+  }
 }

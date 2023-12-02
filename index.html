@@ -12,9 +12,16 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
   </head>
+
   <body>
     <main>
       <section class="primera-pantalla">
@@ -43,30 +50,60 @@
         <!-- <div class="picnic-estrella" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
           <i class="fa-solid fa-asterisk" ></i>
         </div> -->
-        <div class="textos-introduccion titulos-segunda-pagina" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+        <div
+          class="textos-introduccion titulos-segunda-pagina"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="2000"
+        >
           <p class="animate__animated animate__slideInUp">Episodio ix</p>
           <p class="animate__animated animate__slideInUp">Picnic de</p>
           <p class="animate__animated animate__slideInUp">Cumpleaños</p>
         </div>
-        <div class="picnic-texto picnic-texto-entrada" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+        <div
+          class="picnic-texto picnic-texto-entrada"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="2000"
+        >
           <p>
             Un joven jedi llamado Sebastián Skywalker está próximo a celebrar su
             noveno cumpleaños.
           </p>
         </div>
-        <div class="picnic-imagen-container" data-aos="flip-left" data-aos-delay="500" data-aos-duration="2000">
+        <div
+          class="picnic-imagen-container"
+          data-aos="flip-left"
+          data-aos-delay="500"
+          data-aos-duration="2000"
+        >
           <img src="./imagenes/sebasImg1.jpg" alt="" />
         </div>
-        <div class="picnic-texto picnic-texto-medio" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+        <div
+          class="picnic-texto picnic-texto-medio"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="2000"
+        >
           <p>
             Una nueva esperanza aparece para la Resistencia, quienes buscan
             valientes Jedi dispuestos a luchar por una buena causa.
           </p>
         </div>
-        <div class="picnic-imagen-container" data-aos="flip-left" data-aos-delay="500" data-aos-duration="2000">
+        <div
+          class="picnic-imagen-container"
+          data-aos="flip-left"
+          data-aos-delay="500"
+          data-aos-duration="2000"
+        >
           <img src="./imagenes/sebasImg2.jpg" alt="" />
         </div>
-        <div class="picnic-texto picnic-texto-salida" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+        <div
+          class="picnic-texto picnic-texto-salida"
+          data-aos="fade-up"
+          data-aos-delay="500"
+          data-aos-duration="2000"
+        >
           <p>
             Únete y forma parte de nuestra alianza, en un picnic lleno de
             alegría que promete derrotar a la Estrella del aburrimiento.
@@ -74,13 +111,77 @@
           </p>
         </div>
       </section>
+
+      <section class="fiesta-datos-container card" id="cardDiaContainer">
+        <div id="cardFlipDia" class="cards-container">
+          <div class="card-info">
+            <div
+              id="cardInformacionContenedor"
+              class="card-informacion-contenedor"
+            >
+              <i class="fa-solid fa-clock"></i>
+              <p>DIA Y HORA</p>
+            </div>
+            <div
+              class="oculto card-info-volteada"
+              id="cardInfoVolteadaDia"
+            ></div>
+          </div>
+          <div id="flechaVerMasContainer" class="card-flecha">
+            <i id="flechaVerMas" class="fa-solid fa-circle-right"></i>
+          </div>
+        </div>
+
+        <div id="cardFlipLugar" class="cards-container">
+          <div class="card-info">
+            <div
+              id="cardInformacionContenedorLugar"
+              class="card-informacion-contenedor"
+            >
+              <i class="fa-solid fa-map"></i>
+              <p>GALAXIA</p>
+            </div>
+            <div
+              class="oculto card-info-volteada"
+              id="cardInfoVolteadaLugar"
+            ></div>
+          </div>
+          <div id="flechaVerMasContainerLugar" class="card-flecha">
+            <i id="flechaVerMasLugar" class="fa-solid fa-circle-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="btn-verMapa-container">
+        <button>
+          <a target="_blank" href="https://maps.app.goo.gl/jW2zN6RnT38V7W5g6">
+            VER MAPA
+            <i class="fa-solid fa-circle-right"></i>
+          </a>
+        </button>
+      </section>
+
+      <section class="despedida-container">
+        <div class="despedida-slogan">
+          <i class="fa-solid fa-chevron-down"></i>
+          <p>¡QUE LA FUERZA TE ACOMPAÑE!</p>
+        </div>
+
+        <div class="titulo-final animate__animated animate__fadeInUp">
+          <p>Sebas wars</p>
+        </div>
+      </section>
     </main>
 
-    
-
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./javascript/script.js"></script>
   </body>
 </html>
