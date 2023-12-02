@@ -5,8 +5,8 @@
     cardInfo: 'cardInfoVolteadaDia',
     
     cardFlip: 'cardFlipDia',
-    title: 'Día: Sábado 16 de diciembre',
-    description: 'Hora: 3pm',
+    title: 'Sábado 16 de diciembre',
+    description: '3pm',
     flechaVerMas: 'flechaVerMas',
     
     cardInformacionContenedor: 'cardInformacionContenedor',
@@ -31,7 +31,7 @@
     cardInfo: 'cardInfoVolteadaLugar',
     
     cardFlip: 'cardFlipLugar',
-    title: 'Galaxia: Parque Bustamante ',
+    title: 'Parque Bustamante ',
     description: 'Ingreso: Av. del Parque cdra. 3 o Av. Aramburú cdra. 7 - San Isidro',
     flechaVerMas: 'flechaVerMasLugar',
     
@@ -57,7 +57,7 @@
 console.log(description)
     cardInfo.innerHTML = `
     <div class="card-info-volteada">
-    <p>${title} </p><p>${description} </p>
+    <p>${title} </p><br> <p>${description} </p>
     </div>
     
     `
@@ -70,8 +70,8 @@ console.log(description)
     
     cardFlip.classList.add('animate__animated', 'animate__flipInY');
   
-    iconoFlechaVerMas.classList.toggle('fa-circle-right');
-    iconoFlechaVerMas.classList.toggle('fa-circle-left');
+    iconoFlechaVerMas.classList.toggle('fa-chevron-right');
+    iconoFlechaVerMas.classList.toggle('fa-chevron-left');
   
     setTimeout(() => {
       cardFlip.classList.remove('animate__animated', 'animate__flipInY');

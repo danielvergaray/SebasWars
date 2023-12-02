@@ -103,6 +103,17 @@
       transform: scale(1);
     }
   }
+  @keyframes desplazamiento {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px); /* Ajusta la cantidad de desplazamiento según tus necesidades */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
   .imagen-principal {
     text-align: center;
     display: flex;
@@ -151,13 +162,14 @@
     text-shadow: -0.5px -0.5px 0 yellow, 0.5px -0.5px 0 yellow,
       -0.5px 0.5px 0 yellow, 0.5px 0.5px 0 yellow;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
+  
 
   .picnic-container {
     width: 80%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 75px;
   }
   /* .picnic-estrella{
   text-align: center;
@@ -180,6 +192,15 @@
     width: 100%;
     margin: auto;
   }
+  .picnic-texto-medio{
+    padding-top: 0;
+  }
+  .picnic-texto-salida p span{
+    position: relative;
+    top: 10px;
+    color: yellow;
+    font-weight: bolder;
+  }
   .picnic-imagen-container {
     text-align: center;
   }
@@ -191,6 +212,7 @@
 
   .fiesta-datos-container {
     background-color: black;
+    padding: 20px 0;
   }
 
   .cards-container {
@@ -198,7 +220,7 @@
     flex-direction: column; */
     margin: 10px auto;
     padding: 0;
-    height: 150px;
+    height: 200px;
     width: 80%;
     background-color: transparent;
     border: 1px solid yellow;
@@ -219,43 +241,51 @@
 
   .card-info p {
     padding: 0;
-    margin: 0;
-    font-size: 1.25rem;
+    margin: auto;
+    font-size: 0.9rem;
     text-align: center;
     color: white;
     padding-left: 20px;
+    font-family: "Syncopate";
   }
-  .card-info-volteada p{
-    font-size: 1rem;
-    color: yellow;
-    padding-left: 50px;
-    width: 100%;
-  }
+  
   .card-informacion-contenedor {
     margin: auto;
     display: grid;
     grid-template-columns: 20% 80%;
+    
   }
+  
   .card-info i {
     margin: auto;
     color: white;
     font-size: 2rem;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
   }
   .card-flecha {
     position: relative;
-    top: 110px;
+    top: 150px;
     padding-bottom: 20px;
     grid-column: 2;
     color: white;
     height: min-content;
-    
+    font-size: 1.2rem;
+    -webkit-animation: pulse 1s infinite, desplazamiento 2s linear infinite; /* Agregamos una nueva animación de desplazamiento */
+    animation: pulse 1s infinite, desplazamiento 2s linear infinite; /* Agregamos una nueva animación de desplazamiento */
   }
- 
+  .card-info-volteada p{
+    font-size: 0.9rem;
+    color: yellow;
+    padding-left: 50px;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+  }
 
   .btn-verMapa-container {
     text-align: center;
     background-color: black;
+    
   }
   .btn-verMapa-container button {
     width: 80%;
@@ -263,19 +293,30 @@
     background-color: yellow;
     border-radius: 10px;
     text-align: left;
-    padding: 5px;
+    padding: 10px;
     padding-left: 20px;
     border: none;
     margin-top: 10px;
+    display: grid;
+    grid-template-columns: 80% 20%;
   }
   .btn-verMapa-container button i {
+    padding-top: 7%;
+    grid-column: 2;
+    font-size: 1.2rem;
     text-align: right;
-    padding-left: 50%;
-    
+    padding-right: 35%;
+    -webkit-animation: pulse 1s infinite, desplazamiento 2s linear infinite; /* Agregamos una nueva animación de desplazamiento */
+    animation: pulse 1s infinite, desplazamiento 2s linear infinite; /* Agregamos una nueva animación de desplazamiento */
   }
+    
+ 
   .btn-verMapa-container button a{
     text-decoration: none;
     color: black;
+    grid-column: 1;
+    font-family: "Syncopate";
+    font-weight: bolder;
   }
   .despedida-container {
     text-align: center;
@@ -309,3 +350,4 @@
     display: none;
   }
 }
+ 
