@@ -1,13 +1,18 @@
+main{
+  display: none;
+}
+
+
+
 @media (max-width: 576px) {
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
-  }
-  body{
     
-    border: 1px solid blue;
+  }
+  .adventencia-desktop{
+    display: none;
   }
 
   @font-face {
@@ -23,6 +28,7 @@
   }
 
   main {
+    display: block;
     background-image: url(./imagenes/fondo.jpg);
     background-repeat: none;
     background-size: cover;
