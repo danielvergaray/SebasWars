@@ -78,18 +78,3 @@ console.log(description)
     }, 1000);
 }
 
-
-document.addEventListener('DOMContentLoaded', function() {
-
-  let btnAudioHtml= document.getElementById('btnAudio')
-  btnAudioHtml.addEventListener('click', ()=> iniciarReproduccion())
-  
-  function iniciarReproduccion() {
-    let audio = document.getElementById('miAudio');
-    audio.play();
-  }
-})
-
-
-
-
