@@ -247,7 +247,7 @@ main{
   .card-info p {
     padding: 0;
     margin: auto;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
     color: white;
     padding-right: 15px;
@@ -355,6 +355,9 @@ main{
     font-size: 1rem;
     color: black;
   }
+  .titulo-final p{
+    margin: 0;
+  }
 
   .oculto {
     display: none;
@@ -364,13 +367,25 @@ main{
   footer{
     background-color: rgb(31,34,51);
     color: white;
-    margin: auto;
+    
+    text-align: center;
+    
+    padding: 10px 50px;
+    display: flex;
+    
   }
-  footer p{
+  footer a{
     font-family: "Syncopate";
     font-size: 0.5rem;
     text-align: center;
-    margin: 0;
+    margin: auto;
+    
+    text-decoration: none;
+    color: white;
+  }
+  footer div i{
+    margin: auto;
+    
   }
 }
  
