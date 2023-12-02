@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
+  }
+  body{
+    
+    border: 1px solid blue;
   }
 
   @font-face {
@@ -22,14 +27,15 @@
     background-repeat: none;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    max-width: 100%;
     color: white;
   }
 
   .primera-pantalla {
     display: grid;
-    grid-template-rows: 30% 36% 33%;
+    grid-template-rows: 31% 36% 33%;
     height: 100vh;
+    
   }
   .textos-introduccion {
     text-align: center;
@@ -123,6 +129,7 @@
     animation: fadeIn 1s forwards;
     animation-delay: 3s;
     opacity: 0;
+    
   }
 
   .titulo-principal-container {
@@ -169,15 +176,9 @@
   .picnic-container {
     width: 80%;
     margin: auto;
-    padding-top: 75px;
+    padding-top: 40px;
   }
-  /* .picnic-estrella{
-  text-align: center;
-  padding-top: 100px;
-  font-size: 2rem;
-  color: yellow;
-  
-} */
+
 
   .picnic-texto {
     padding: 20px 0;
@@ -196,8 +197,8 @@
     padding-top: 0;
   }
   .picnic-texto-salida p span{
-    position: relative;
-    top: 10px;
+    /* position: relative;
+    top: 10px; */
     color: yellow;
     font-weight: bolder;
   }
@@ -212,7 +213,7 @@
 
   .fiesta-datos-container {
     background-color: black;
-    padding: 20px 0;
+    padding: 40px 0;
   }
 
   .cards-container {
@@ -230,9 +231,7 @@
   }
 
   .card-info {
-    /* creada en el js */
-    /* display: grid;
-    grid-template-columns: 20% 60% 20%; */
+    
     margin: auto 0;
     justify-content: center;
     align-items: center;
@@ -245,8 +244,11 @@
     font-size: 0.9rem;
     text-align: center;
     color: white;
-    padding-left: 20px;
+    padding-right: 15px;
     font-family: "Syncopate";
+  }
+  .card-info .card-texto-galaxia{
+    padding-right: 50px;
   }
   
   .card-informacion-contenedor {
@@ -259,7 +261,7 @@
   .card-info i {
     margin: auto;
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-left: 1.5rem;
   }
   .card-flecha {
@@ -317,6 +319,7 @@
     grid-column: 1;
     font-family: "Syncopate";
     font-weight: bolder;
+    margin: auto 0;
   }
   .despedida-container {
     text-align: center;
@@ -335,6 +338,7 @@
     padding: 20px 0;
     font-family: "Syncopate";
     font-weight: bolder;
+    line-height: 15px;
   }
   .titulo-final {
     font-family: "StarJediHollow-A4lL";
@@ -348,6 +352,19 @@
 
   .oculto {
     display: none;
+  }
+
+
+  footer{
+    background-color: rgb(31,34,51);
+    color: white;
+    margin: auto;
+  }
+  footer p{
+    font-family: "Syncopate";
+    font-size: 0.5rem;
+    text-align: center;
+    margin: 0;
   }
 }
  
