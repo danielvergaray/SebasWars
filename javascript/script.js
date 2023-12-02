@@ -77,3 +77,12 @@ console.log(description)
       cardFlip.classList.remove('animate__animated', 'animate__flipInY');
     }, 1000);
 }
+
+
+let btnAudioHtml= document.getElementById('btnAudio')
+btnAudioHtml.addEventListener('click', ()=> iniciarReproduccion())
+
+function iniciarReproduccion() {
+  let audio = document.getElementById('miAudio');
+  audio.play();
+}
