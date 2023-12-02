@@ -79,10 +79,17 @@ console.log(description)
 }
 
 
-let btnAudioHtml= document.getElementById('btnAudio')
-btnAudioHtml.addEventListener('click', ()=> iniciarReproduccion())
+document.addEventListener('DOMContentLoaded', function() {
 
-function iniciarReproduccion() {
-  let audio = document.getElementById('miAudio');
-  audio.play();
-}
+  let btnAudioHtml= document.getElementById('btnAudio')
+  btnAudioHtml.addEventListener('click', ()=> iniciarReproduccion())
+  
+  function iniciarReproduccion() {
+    let audio = document.getElementById('miAudio');
+    audio.play();
+  }
+})
+
+
+
+
