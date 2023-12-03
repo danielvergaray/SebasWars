@@ -212,6 +212,8 @@ footer div i{
     padding-top: 40px;
     -webkit-animation: pulse 1s infinite;
     animation: pulse 1s infinite;
+    width: fit-content;
+    margin: auto;
   }
   .icono-desplazamiento-container i {
     color: #434343;
