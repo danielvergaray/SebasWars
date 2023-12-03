@@ -32,7 +32,7 @@
     
     cardFlip: 'cardFlipLugar',
     title: 'Parque Bustamante ',
-    description: 'Ingreso: Av. del Parque cdra. 3 o Av. Aramburú cdra. 7 - San Isidro',
+    description: '(Av. del Parque cdra. 3 o Av. Aramburú cdra. 7 - San Isidro)',
     flechaVerMas: 'flechaVerMasLugar',
     
     cardInformacionContenedor: 'cardInformacionContenedorLugar',
@@ -57,7 +57,7 @@
 console.log(description)
     cardInfo.innerHTML = `
     <div class="card-info-volteada">
-    <p>${title} </p><br> <p>${description} </p>
+    <p>${title} </p><p>${description} </p>
     </div>
     
     `
